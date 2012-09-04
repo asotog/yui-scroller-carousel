@@ -1,0 +1,62 @@
+.scroller-carousel {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroller-carousel-content {
+    position: relative;
+    white-space:nowrap;
+}
+
+.yui3-scrollview-loading {
+    visibility: hidden;   
+}
+
+/* To layout horizontal LIs */
+.scroller-carousel-content {
+    position: relative;
+}
+
+.scroller-carousel-content li {
+    vertical-align: top;
+}
+
+/* For IE 6/7 - needs inline block hack (and the background color mentioned above) */
+.scroller-carousel-content li {
+    *display:inline;
+    *zoom:1;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+}
+
+.scroller-carousel-content li div {
+    white-space: normal;
+}
+
+.scroller-menu {
+    display: inline;
+}
+
+.scroller-menu li {
+    display: inline;
+    float: left;
+}
+
+.scroller-menu li a {
+    height: 12px;
+    width: 12px;
+    margin: 4px 3px;
+    background: #DEDEDE;
+    display: block;
+    /* CSS 3  */
+    -webkit-box-shadow: inset 1px 1px 1px 1px #8C8D8D;
+    box-shadow: inset 1px 1px 1px 1px #8C8D8D;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.scroller-menu li a.carousel-page-active {
+    background: #FFA500
+}
+

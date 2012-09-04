@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Insert title here</title>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.5.1/build/cssreset/cssreset-min.css"></link>
+        <script src="http://yui.yahooapis.com/3.4.0/build/yui/yui-min.js"></script> 
+        <link rel="stylesheet" href="../src/scroller-carousel.css" type="text/css" charset="utf-8"></link>
+        <script src="../src/scroller-carousel.js"></script>
+        <style>
+            /* Custom styles */
+            #my-carousel {
+                width: 500px;
+            }
+            
+            #my-carousel li {
+                width: 250px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="scroller-carousel">
+            <div id="my-carousel" class="scroller-carousel-content yui3-scrollview-loading">
+                <ul>
+                    <li class="scroller-carousel-item">
+                        <div>
+							<p>
+							In vitae purus a urna suscipit cursus. Cras ornare odio et mi vulputate nec malesuada tellus faucibus. Mauris semper, elit a lobortis tincidunt, tellus nisl placerat neque, vel feugiat dolor ligula at diam. Curabitur scelerisque velit non sapien ultricies dignissim. Cras tristique nunc vel urna dignissim ultricies. Aenean ornare ligula ac tortor pellentesque rutrum. Praesent interdum, orci eget condimentum fringilla, nibh odio bibendum diam, et tempus magna dui non nulla. Proin commodo, tortor sed interdum mollis, libero turpis suscipit lectus, id scelerisque nibh neque id enim. Donec mollis semper orci ut aliquet. Nullam vehicula vestibulum lacus eu suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae eleifend ipsum.
+							</p>
+                        </div>
+                    </li>
+                    <li class="scroller-carousel-item">
+                        <div>
+		                    <ul>
+								<li>Ut malesuada neque at quam facilisis non dignissim velit aliquam.</li>
+								<li>Nulla eu erat lectus, in fringilla sem.</li>
+								<li>Aenean suscipit lobortis eros, sed adipiscing ante bibendum viverra.</li>
+								<li>Nam vehicula enim sed tellus pulvinar venenatis.</li>
+								<li>Fusce vitae libero in nunc congue condimentum.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="scroller-carousel-item">
+                        <div>
+							<p>
+							Suspendisse non nibh turpis, sit amet faucibus nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas fringilla viverra lectus et dignissim. In tempor neque purus, nec mattis ante. Donec a quam at justo tincidunt placerat. Integer at turpis dui. Curabitur vestibulum semper massa, quis semper diam hendrerit eu. Aliquam lacinia orci eu tortor ultricies tincidunt. Phasellus varius tortor ac orci mollis ornare. Etiam euismod, diam et suscipit lacinia, dolor urna auctor felis, nec facilisis ante tortor in est. Phasellus nec risus lectus. Praesent eu eros eros, faucibus dignissim nibh. Nulla vulputate tellus ut mi adipiscing commodo. Vestibulum eleifend vulputate mi nec rutrum.
+							</p>
+                        </div>
+                    </li>
+                    <li class="scroller-carousel-item">
+                        <div>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor malesuada nulla a vestibulum. Phasellus a ipsum diam. Duis sodales interdum augue, id gravida leo faucibus lobortis. In ultricies pretium justo et volutpat. Duis adipiscing auctor nibh, et faucibus enim suscipit at. Ut adipiscing dapibus facilisis. Etiam velit orci, condimentum at pulvinar eu, lobortis sit amet arcu.
+							</p>
+                        </div>
+                    </li>
+                    <li class="scroller-carousel-item">
+                        <div>
+							<p>
+							Quisque vel eros dolor, sed semper lectus. Morbi hendrerit dapibus interdum. Duis dictum eleifend arcu, dictum tristique lectus placerat at. Proin vel risus vitae nisl convallis porta. In hac habitasse platea dictumst. Quisque sit amet odio mauris, a eleifend nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce non nisl odio. Sed pellentesque luctus cursus. Fusce lobortis, metus nec rhoncus pharetra, elit felis scelerisque elit, pretium vehicula arcu sapien vel dolor. Integer pharetra iaculis nunc elementum aliquam. Phasellus nec est nunc. Morbi sagittis lorem eget ipsum pulvinar luctus. Nulla tellus lacus, rhoncus sed auctor id, convallis non ante. Nulla commodo convallis arcu, rhoncus molestie massa ornare sed. Nunc risus purus, accumsan eget rutrum sed, dictum nec sem.
+							</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Optional -->
+		<div class="scroller-navigation">
+		    <ul class="scroller-menu">
+		    </ul>
+		</div>
+		
+		
+		
+		<script type="text/javascript" charset="utf-8">
+			YUI().use('scroller-carousel', 'node', function(Y) {
+				Y.on('domready', function() {
+				    var scrollerCarousel = new Y.ScrollerCarousel({
+				        prevButton: Y.one('div.scroller-navigation .prev'),
+				        nextButton: Y.one('div.scroller-navigation .next'),
+				        navigation: Y.one('.scroller-navigation'),
+				        navMenu: Y.one('ul.scroller-menu'),
+				        id: 'my-carousel',
+				        sourceNode: 'div.scroller-carousel-content',
+				        width: 500,
+				        pageSize: 2
+				    });
+					
+				});
+			});
+		</script>
+		
+		
+    </body>
+</html>
